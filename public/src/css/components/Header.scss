@@ -1,5 +1,4 @@
-$primary-color: #f44242;
-$primary-font: 'Arial';
+@import './app.scss';
 
 .myHeader {
 	font-family: $primary-font;

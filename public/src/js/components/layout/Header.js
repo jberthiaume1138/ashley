@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-import styles from './Header.scss';
+import styles from '../../../css/components/Header.scss';
 
 export default class Header extends React.Component {
 	render () {
