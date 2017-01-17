@@ -1,29 +1,35 @@
-$primary-color: #f44242;
+$primary-font: 'Open Sans', sans-serif;;
+
+a {
+	text-decoration: none;
+}
 
 .banner {
-	font-family: 'Verdana';
+	/* Typography */
+	font-family: $primary-font;
+	/* Layout */
 	width: 100%;
 	margin: 0 auto;
 	padding: 0;
+	text-align: center;
 
 	.bannerH1 {
+		/* Typography */
+		font-weight: 600;
 		color: #0818ce;
-		font-size: 5em;
-		background-color: #2cce08;
+		font-size: 2.5em;
+		/* Layout */
 		margin: 0 auto;
 		padding: 0;
 	}
 
 	.bannerH2 {
+		/* Typography */
+		font-weight: 300;
 		color: #FF0000;
-		font-size: 2em;
-		background-color: #2cce08;
+		font-size: 1.25em;
+		/* Layout */
 		margin: 0 auto;
 		padding: 0;
 	}
-}
-
-.myThing {
-	color: $primary-color;
-	font-size: 1em;
 }

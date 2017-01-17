@@ -1,10 +1,12 @@
 import React from 'react';
 
+import style from './style/Footer.scss';
+
 export default class Footer extends React.Component {
 	render () {
 		return (
             <footer>
-				<p>Copyright 2017</p>
+				<p className={style.copyright}>Copyright 2017</p>
 			</footer>
 		);
 	}

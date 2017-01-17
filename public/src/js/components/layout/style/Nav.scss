@@ -1,7 +1,15 @@
 .navBar {
-
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
 }
 
 .navLink {
     text-decoration: none;
+	margin: 0 1em;
+}
+
+.navLink:hover {
+    color: #FF0000;
 }
