@@ -3,7 +3,9 @@ import React from 'react';
 export default class Footer extends React.Component {
 	render () {
 		return (
-            <h4>Footer</h4>
+            <footer>
+				<p>Copyright 2017</p>
+			</footer>
 		);
 	}
 }
