@@ -3,13 +3,17 @@
     margin: 0 auto;
     padding: 0;
     text-align: center;
-}
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
 
-.navLink {
-    text-decoration: none;
-	margin: 0 1em;
-}
+    .navLink {
+        text-decoration: none;
+    	margin: 0 1em  ;
+    }
 
-.navLink:hover {
-    color: #FF0000;
+    .navLink:hover {
+        color: #000000;
+    }
+
 }

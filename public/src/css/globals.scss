@@ -1,11 +1,11 @@
-$primary-color: #f44242;
-$primary-font: 'Verdana';
+$primary-color: #000000;
+$primary-font: 'Open Sans', sans-serif;
 
 *, *:after, *:before {
   box-sizing: border-box;
 }
 
-body {
+body, div {
   margin: 0;
   padding: 0;
   border: 0;
