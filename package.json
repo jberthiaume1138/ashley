@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "dev": "node_modules/.bin/webpack-dev-server --content-base public/src/build --inline --hot",
-	"dist" : "webpack --optimize-minimize --define process.env.NODE_ENV=production && cp public/src/build/* public/dist",
-    "build" : "webpack --optimize-minimize --define process.env.NODE_ENV=production && git subtree push --prefix public/src/build origin gh-pages",
+    "deploy" : "webpack --optimize-minimize --define process.env.NODE_ENV=production && git subtree push --prefix public/src/build origin gh-pages",
     "universal" : "webpack --optimize-minimize --define process.NODE_ENV=production && nodemon -e js,scss server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
