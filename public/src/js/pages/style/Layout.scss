@@ -3,21 +3,3 @@ body, div {
     padding: 0;
     border: 0;
 }
-
-body {
-    max-width: 1600px;
-}
-
-.flexgrid {
-  display: flex;
-  flex-flow: column;
-}
-.col {
-  flex: 1;
-}
-
-@media (max-width: 400px) {
-  .flex-grid {
-    display: block;
-  }
-}

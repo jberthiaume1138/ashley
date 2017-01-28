@@ -10,7 +10,7 @@ import styles from './style/Layout.scss';
 export default class Layout extends React.Component {
 	render() {
 		return (
-			<div>
+			<div className={styles.layout}>
 				<Header/>
 				{this.props.children}
 				<Nav/>

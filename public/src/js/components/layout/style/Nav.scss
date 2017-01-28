@@ -1,15 +1,17 @@
 .navBar {
-    width: 100%;
+	width: 100%;
     margin: 0 auto;
     padding: 0;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1em;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
 
     .navLink {
         text-decoration: none;
-    	padding: 0 5em;
     }
 
     .navLink:hover {

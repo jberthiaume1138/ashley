@@ -9,3 +9,5 @@ export default class Home extends React.Component {
 		);
 	}
 }
+
+// http://lorempixel.com/800/800/
