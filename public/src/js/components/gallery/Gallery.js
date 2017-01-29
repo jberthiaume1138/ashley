@@ -15,22 +15,33 @@ export default class Gallery extends React.Component {
 	}
 
 	handleThumbClick(selectedImage) {
-		// console.log('Next clicked');
 		this.setState({
 			selectedImage
 		});
+	}
+
+	handlePreviousClick() {
+		console.log('Previous Clicked');
+
+		// var i = this.props.
+		// this.setState({
+		// 	selectedImage ;
+		// });
+	}
+
+	handleNextClick() {
+		console.log('Next Clicked');
 	}
 
 	render() {
 		return (
 			<div>
 				<div className={style.selectedImage}>
-					<Pagination label={'<'} />
+					<Pagination onClick={this.handlePreviousClick.bind(this)} label={'<'} />
 					<Photo src={this.state.selectedImage} width='400' height='400'/>
-					<Pagination label={'>'} />
+					<Pagination onClick={this.handleNextClick.bind(this)} label={'>'} />
 				</div>
 				<div className={style.thumbGallery}>
-					{ /*this.props.photos.map(photo => <img onClick={this.handleThumbClick.bind(this, photo)} src={photo} width='200' height='200'/>) */}
 				 	{ this.props.photos.map(photo => <Photo onClick={this.handleThumbClick.bind(this, photo)} src={photo} width='150' height='150'/>) }
 				</div>
 			</div>
