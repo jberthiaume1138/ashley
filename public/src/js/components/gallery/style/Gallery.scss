@@ -1,4 +1,13 @@
-.gallery {
+.selectedImage {
 	display: flex;
 	flex-flow: row nowrap;
+}
+
+.thumbGallery {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.image {
+	border: 1px solid black;
 }
