@@ -42,7 +42,7 @@ export default class Gallery extends React.Component {
 					<Pagination onClick={this.handleNextClick.bind(this)} label={'>'} />
 				</div>
 				<div className={style.thumbGallery}>
-				 	{ this.props.photos.map(photo => <Photo onClick={this.handleThumbClick.bind(this, photo)} src={photo} width='150' height='150'/>) }
+				 	{ this.props.photos.map((photo, index) => <Photo onClick={this.handleThumbClick.bind(this, photo)} src={photo} width='150' height='150'/>) }
 				</div>
 			</div>
 		);
