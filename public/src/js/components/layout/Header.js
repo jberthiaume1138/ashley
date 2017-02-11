@@ -7,8 +7,8 @@ export default class Header extends React.Component {
 	render () {
 		return (
 			<header className={styles.banner}>
-				<Link to="/"><h1>Your Name</h1></Link>
-				<h2>Some Sub-Header Blurb!!</h2>
+				<Link to="/"><h1 className={styles.name}>Ashley Berthiaume</h1></Link>
+				<h2>New York City Fashion Design</h2>
 			</header>
 		);
 	}
