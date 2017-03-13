@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-import Header from '../components/layout/Header';
-import Footer from '../components/layout/Footer';
-import Nav from '../components/layout/Nav';
+import Header from './layout/Header';
+import Footer from './layout/Footer';
+import Nav from './layout/Nav';
 
-import styles from './style/Layout.scss';
+import styles from './layout/style/Layout.scss';
 
 export default class Layout extends React.Component {
 	render() {
