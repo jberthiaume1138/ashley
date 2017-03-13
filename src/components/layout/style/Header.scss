@@ -1,7 +1,5 @@
 $primary-font: 'Open Sans', sans-serif;
 
-
-
 .banner {
 	/* Typography */
 	font-family: $primary-font;
@@ -11,6 +9,10 @@ $primary-font: 'Open Sans', sans-serif;
 	padding: 0;
 	text-align: center;
 	background-color: #FFFFFF;
+	height: 50px;
+	// position: fixed;
+	// z-index: 1;
+	// top: 0;
 
 	h1 {
 		/* Typography */
@@ -35,8 +37,8 @@ $primary-font: 'Open Sans', sans-serif;
 
 .name {
 	height: 50px;
-	position: fixed;
-	z-index: 1;
-	top: 0;
+	// position: fixed;
+	// z-index: 1;
+	// top: 0;
 	background-color: #FFFFFF;
 }

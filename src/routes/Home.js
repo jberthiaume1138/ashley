@@ -1,13 +1,17 @@
 import React from 'react';
 
+import styles from './style/Home.scss';
+
 export default class Home extends React.Component {
 	render() {
 		return (
 			<main>
-				<p>Home Content</p>
+				<div className={styles.homeWrapper}>
+					<p>Home Content</p>
+					<p>Home Content</p>
+					<p>Home Content</p>
+				</div>
 			</main>
 		);
 	}
 }
-
-// http://lorempixel.com/800/800/
