@@ -2,17 +2,15 @@ import React from 'react';
 import {Router, Route, IndexRoute, hashHistory} from 'react-router';
 
 import Layout from './components/Layout';
-// import Home from './routes/Home';
-//
+import Home from './routes/Home';
+
 // import About from './routes/About';
 // import Portfolio from './routes/Portfolio';
 // import Contact from './routes/Contact';
-
-// TODO: this isn't rendering the Home component...
+// import Press from './routes/Press';
+//
+//
 const componentRoutes = {
-	// path: '/',
-	// component: Layout,
-	// IndexRoute: { component: Home },
 	component: Layout,
 	childRoutes: [
 		{
@@ -33,6 +31,13 @@ const componentRoutes = {
 			path: 'portfolio',
 			getComponent(location, cb) {
 				System.import('./routes/Portfolio')
+					.then(module => cb(null, module.default));
+			}
+		},
+		{
+			path: 'press',
+			getComponent(location, cb) {
+				System.import('./routes/Press')
 					.then(module => cb(null, module.default));
 			}
 		},
@@ -61,6 +66,7 @@ const Routes = () => {
 // 				<Route path='about' component={About}></Route>
 // 				<Route path='portfolio' component={Portfolio}></Route>
 // 				<Route path='contact' component={Contact}></Route>
+// 				<Route path='press' component={Press}></Route>
 // 			</Route>
 // 		</Router>
 // 	);
