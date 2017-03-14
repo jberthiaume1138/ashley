@@ -1,50 +1,90 @@
-$primary-font: 'Open Sans', sans-serif;
+$primary-font: 'Lato', sans-serif;
 
-.banner {
-	/* Typography */
-	font-family: 'Open Sans';
-	/* Layout */
+header {
 	width: 100%;
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
-	text-align: center;
-	background-color: #FFFFFF;
-	height: 75px;
-	position: fixed;
-	// z-index: 1;
-	// top: 0;
-
-	h1 {
-		/* Typography */
-		font-weight: 600;
-		color: #000000;
-		font-size: 3em;
-		/* Layout */
-		margin: 0 auto;
-		// padding-bottom: 0.75em;
-	}
-
-	h2 {
-		/* Typography */
-		font-weight: 300;
-		color: #555555;
-		font-size: 1.25em;
-		/* Layout */
-		margin: 0 auto;
-		padding: 0;
-	}
+	border: 0;
+	/* Typography */
+	font-family: $primary-font;
 }
 
-.name {
-	height: 50px;
-	// position: fixed;
-	// z-index: 1;
-	// top: 0;
-	background-color: #FFFFFF;
+.wrapper {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.headline {
+	padding: 25px 0 0 0;
+	margin: 0;
+	/* Typography */
+	font-weight: 400;
+	color: #000000;
+	font-size: 3em;
+	text-align: center;
+}
+
+.subheader {
+	padding: 0;
+	margin: 0;
+	/* Typography */
+	font-weight: 300;
+	color: #555555;
+	font-size: 1.25em;
+	text-align: center;
 }
 
 @media all and (max-width: 450px) {
-	.name {
-		font-size: 1.5em;
+	.headline {
+		padding: 0;
+		font-size: 2em;
+	}
+
+	.subheader {
+		display: none;
 	}
 }
+// .banner {
+// 	/* Typography */
+// 	font-family: 'Open Sans';
+// 	/* Layout */
+// 	margin: 0 auto;
+// 	padding: 0;
+// 	text-align: center;
+// 	background-color: #FFFFFF;
+// 	height: 75px;
+// 	position: fixed;
+// 	// z-index: 1;
+// 	// top: 0;
+//
+// 	h1 {
+// 		/* Typography */
+// 		font-weight: 600;
+// 		color: #000000;
+// 		font-size: 3em;
+// 		/* Layout */
+// 		margin: 0 auto;
+// 		// padding-bottom: 0.75em;
+// 	}
+//
+// 	h2 {
+// 		/* Typography */
+// 		font-weight: 300;
+// 		color: #555555;
+// 		font-size: 1.25em;
+// 		/* Layout */
+// 		margin: 0 auto;
+// 		padding: 0;
+// 	}
+// }
+//
+// .name {
+// 	height: 50px;
+// 	// position: fixed;
+// 	// z-index: 1;
+// 	// top: 0;
+// 	background-color: #FFFFFF;
+// }
