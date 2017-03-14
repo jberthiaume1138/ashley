@@ -2,15 +2,15 @@ $primary-font: 'Open Sans', sans-serif;
 
 .banner {
 	/* Typography */
-	font-family: $primary-font;
+	font-family: 'Open Sans';
 	/* Layout */
 	width: 100%;
 	margin: 0 auto;
 	padding: 0;
 	text-align: center;
 	background-color: #FFFFFF;
-	height: 50px;
-	// position: fixed;
+	height: 75px;
+	position: fixed;
 	// z-index: 1;
 	// top: 0;
 
@@ -18,10 +18,10 @@ $primary-font: 'Open Sans', sans-serif;
 		/* Typography */
 		font-weight: 600;
 		color: #000000;
-		font-size: 2em;
+		font-size: 3em;
 		/* Layout */
 		margin: 0 auto;
-		padding: 0;
+		// padding-bottom: 0.75em;
 	}
 
 	h2 {

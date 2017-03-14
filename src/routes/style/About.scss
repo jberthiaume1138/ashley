@@ -1,5 +1,22 @@
+.wrapper {
+	display: flex;
+	flex-flow: row ;
+}
+
+.textWrapper {
+	max-width: 700px;
+	padding: 1em;
+}
+
+.headline {
+	font-family: 'Simonetta', sans-serif;
+	padding: 1 em;
+	font-size: 1.5em;
+	margin: 0 auto;
+	text-align: center;
+}
 .mainText {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    padding: 1em;
+  font-family: 'Simonetta', sans-serif;
+  font-weight: 300;
+  padding: 1em;
 }

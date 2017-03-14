@@ -1,14 +1,20 @@
 import React from 'react';
 
-import style from './style/About.scss';
+import styles from './style/About.scss';
 
 export default class About extends React.Component {
 	render() {
 		return (
-			<div>
-				<h4>About me...</h4>
-				<p className={style.mainText}>When in the Course of human events it becomes necessary for one people to dissolve the political bands which have connected them with another and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.</p>
-				<p className={style.mainText}>We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness. — That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed, — That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government, laying its foundation on such principles and organizing its powers in such form, as to them shall seem most likely to effect their Safety and Happiness. </p>
+			<div className={styles.wrapper}>
+				<div >
+					<img src='../images/comp-sketch-1.jpg' height="400"/>
+				</div>
+				<div className={styles.textWrapper}>
+					<h4 className={styles.headline}>About me</h4>
+					<p className={styles.mainText}>I am a New York City based clothing designer with a BFA from the Fashion Institute of Technology. I have over 9 years of experience working in both mass market and runway. My passion lies in creating products the everyday woman can wear. I draw inspiration from so many things, from costume history to architecture to modern art. I enjoy challenging myself, learning new skills, and traveling to discover new trends and processes.</p>
+					<p className={styles.mainText}>	In addition to designing professionally, I have my own successful Etsy brand Go Follow Rabbits. It’s a store dedicated to fun, girly prints for young women.</p>
+					<p className={styles.mainText}>I am always looking forward and try to interpret my passion through my work. </p>
+				</div>
 			</div>
 		);
 	}
