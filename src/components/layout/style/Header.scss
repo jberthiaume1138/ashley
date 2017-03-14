@@ -1,7 +1,10 @@
 $primary-font: 'Lato', sans-serif;
 
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
 header {
-	width: 100%;
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -14,11 +17,14 @@ header {
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
+	position: fixed;
 	width: 100%;
+	padding: 1em 0;
+	background-color: white;
 }
 
 .headline {
-	padding: 25px 0 0 0;
+	padding: 0;
 	margin: 0;
 	/* Typography */
 	font-weight: 400;
@@ -38,8 +44,11 @@ header {
 }
 
 @media all and (max-width: 450px) {
+	.wrapper {
+		padding: 0.25em;
+	}
+
 	.headline {
-		padding: 0;
 		font-size: 2em;
 	}
 
@@ -47,6 +56,9 @@ header {
 		display: none;
 	}
 }
+
+
+
 // .banner {
 // 	/* Typography */
 // 	font-family: 'Open Sans';

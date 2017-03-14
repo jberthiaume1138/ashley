@@ -1,7 +1,8 @@
 .wrapper {
 	display: flex;
 	flex-flow: row;
-	justify-content: space-around;
+	justify-content: center;
+	padding-top: 120px;
 }
 
 .imageWrapper {
@@ -31,5 +32,11 @@
 	.wrapper {
 		flex-flow: column-reverse;
 		align-items: center;
+	}
+}
+
+@media all and (max-width: 450px) {
+	.wrapper {
+		padding-top: 42px;
 	}
 }
