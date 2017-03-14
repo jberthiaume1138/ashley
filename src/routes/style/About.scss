@@ -1,11 +1,15 @@
 .wrapper {
 	display: flex;
-	flex-flow: row ;
+	flex-flow: row;
+	justify-content: space-around;
+}
+
+.imageWrapper {
+	margin: 0 1em;
 }
 
 .textWrapper {
 	max-width: 700px;
-	padding: 1em;
 }
 
 .headline {
@@ -19,4 +23,11 @@
   font-family: 'Simonetta', sans-serif;
   font-weight: 300;
   padding: 1em;
+}
+
+@media all and (max-width: 760px) {
+	.wrapper {
+		flex-flow: column-reverse;
+		align-items: center;
+	}
 }

@@ -6,7 +6,7 @@ export default class About extends React.Component {
 	render() {
 		return (
 			<div className={styles.wrapper}>
-				<div >
+				<div className={styles.imageWrapper}>
 					<img src='../images/comp-sketch-1.jpg' height="400"/>
 				</div>
 				<div className={styles.textWrapper}>

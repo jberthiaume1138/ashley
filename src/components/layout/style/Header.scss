@@ -42,3 +42,9 @@ $primary-font: 'Open Sans', sans-serif;
 	// top: 0;
 	background-color: #FFFFFF;
 }
+
+@media all and (max-width: 450px) {
+	.name {
+		font-size: 1.5em;
+	}
+}
