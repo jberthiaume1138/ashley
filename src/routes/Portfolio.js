@@ -16,9 +16,9 @@ export default class Portfolio extends React.Component {
 		];
 
 		return (
-			<div>
-				<p className={styles.mypara}>This is my portfolio</p>
-				<Gallery photos={imageData} />
+			<div className={styles.wrapper}>
+				<p className={styles.mypara}>Portfolio - coming soon</p>
+				{/* <Gallery photos={imageData} /> */}
 			</div>
 		);
 	}

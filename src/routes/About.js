@@ -1,5 +1,7 @@
 import React from 'react';
 
+import sketch from '../images/comp-sketch-1.jpg';
+
 import styles from './style/About.scss';
 
 export default class About extends React.Component {
@@ -7,7 +9,7 @@ export default class About extends React.Component {
 		return (
 			<div className={styles.wrapper}>
 				<div className={styles.imageWrapper}>
-					<img src='../images/comp-sketch-1.jpg' height="400"/>
+					<img src={sketch} height="400"/>
 				</div>
 				<div className={styles.textWrapper}>
 					<h4 className={styles.headline}>About me</h4>

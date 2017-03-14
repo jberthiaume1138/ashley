@@ -1,9 +1,7 @@
-main {
-	padding-top: 100px;
-	padding-bottom: 25px;
-}
-
 .homeWrapper {
-	padding-top: 75px;
-	min-height: 200px;
+	padding-top: 120px;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
 }
