@@ -8,3 +8,15 @@
   color: #888888;
 	text-align: center;
 }
+
+@media all and (max-width: 760px) {
+	.wrapper {
+		padding-bottom: 3em;
+	}
+}
+
+@media all and (max-width: 450px) {
+	.wrapper {
+		padding-bottom: 3em;
+	}
+}
