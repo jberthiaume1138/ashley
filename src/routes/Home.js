@@ -10,9 +10,9 @@ export default class Home extends React.Component {
 	render() {
 		return (
 			<div className={styles.homeWrapper}>
-				<img src={two} height='600' />
-				<img src={one} height='600' />
-				<img src={three} height='600' />
+				<img className={styles.largeFormat} src={two} height='700' />
+				<img className={styles.mobileFirst} src={one} height='700' />
+				<img className={styles.largeFormat} src={three} height='700' />
 			</div>
 		);
 	}
