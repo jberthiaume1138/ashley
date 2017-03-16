@@ -1,9 +1,50 @@
- a {
- 	text-decoration: none;
- }
+html, body {
+    margin: 0;
+		padding: 0;
+		border: 0;
+    height: 100%;
+    min-height: 100%;
+}
 
- body {
+a {
+	text-decoration: none;
+}
+
+.layout {
 	margin: 0;
 	padding: 0;
-	border: 0;
- }
+	min-height: 100vh;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+}
+
+header {
+	flex: 0 0 auto;
+}
+
+main {
+	flex: 1 1 auto;
+
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+
+nav {
+	flex: 0 0 auto;
+	padding-bottom: 1em;
+}
+
+
+// @media all and (max-width: 760px) {
+// 	.layout {
+// 		flex-flow: column;
+//  		justify-content: space-between;
+//  		align-items: center;
+//   }
+//
+// 	main {
+// 		align-content: center;
+// 	}
+//  }
