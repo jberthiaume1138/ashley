@@ -13,7 +13,8 @@
 	background-color: white;
 
     .navLink {
-        text-decoration: none;
+      text-decoration: none;
+			color: #8146db;
     }
 
     .navLink:hover {
@@ -23,6 +24,10 @@
 				transition-duration: 0.3s;
 				transition-timing-function: ease-in;
     }
+
+		.navActive {
+			color: #000000;
+		}
 }
 
 @media all and (max-width: 760px) {
