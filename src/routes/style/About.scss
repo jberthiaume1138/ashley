@@ -20,8 +20,9 @@ $secondary-font: 'Simonetta', cursive;
 
 .headline {
 	font-family: $primary-font;
-	padding: 1 em;
-	font-size: 1.5em;
+	font-weight: 400;
+	padding: 1.25em 1em 0 1em;
+	font-size: 1.3em;
 	margin: 0 auto;
 	text-align: center;
 	color: #555555;
