@@ -1,3 +1,6 @@
+$primary-font: 'Lato', sans-serif;
+$secondary-font: 'Simonetta', cursive;
+
 .wrapper {
 	height: 100%;
 	display: flex;
@@ -16,7 +19,7 @@
 }
 
 .headline {
-	font-family: 'Simonetta', sans-serif;
+	font-family: $primary-font;
 	padding: 1 em;
 	font-size: 1.5em;
 	margin: 0 auto;
@@ -25,7 +28,7 @@
 }
 
 .mainText {
-  font-family: 'Simonetta', sans-serif;
+  font-family: $secondary-font;
   font-weight: 300;
   padding: 1em;
 	margin: 0;
