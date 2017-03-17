@@ -16,10 +16,10 @@ body {
 .layout {
 	margin: 0;
 	padding: 0;
-	min-height: 100vh;
-	display: flex;
-	flex-flow: column;
-	justify-content: space-between;
+	// display: flex;
+	// flex-flow: column;
+	// justify-content: space-between;
+	// align-items: stretch;
 }
 
 header {
@@ -29,8 +29,8 @@ header {
 main {
 	flex: 1 1 auto;
 
-	display: flex;
-	flex-flow: column;
+	display: flex;					// these 3 lines center the main content div VERTICALLY
+	flex-flow: column;			// between the header and nav-footer
 	justify-content: center;
 }
 
@@ -39,15 +39,23 @@ nav {
 	padding-bottom: 1em;
 }
 
+@media all and (max-height: 1024px) and (max-width: 450px) {
+	.layout {
+		min-height: 100vh;
+		display: flex;
+		flex-flow: column;
+		justify-content: space-between;
+		align-items: stretch;
+	}
+}
 
-// @media all and (max-width: 760px) {
-// 	.layout {
-// 		flex-flow: column;
-//  		justify-content: space-between;
-//  		align-items: center;
-//   }
-//
-// 	main {
-// 		align-content: center;
-// 	}
-//  }
+@media all and (min-height: 1024px) {		// for very tall screens, align top
+	.layout {
+		justify-content: flex-start;
+		align-items: space-between;
+	}
+
+	nav {
+		padding-top: 3em;
+	}
+}

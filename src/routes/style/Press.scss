@@ -1,3 +1,7 @@
+$primary-font: 'Lato', sans-serif;
+$secondary-font: 'Simonetta', cursive;
+
+
 .wrapper {
 	display: flex;
 	flex-flow: row;
@@ -14,12 +18,14 @@
 }
 
 .headline {
-	font-family: 'Simonetta', sans-serif;
+	// font-family: 'Simonetta', sans-serif;
 	padding: 1 em;
 	font-size: 1.5em;
 	margin: 0 auto;
 	text-align: center;
 	color: #555555;
+	font-family: $primary-font;
+	font-weight: 400;
 }
 
 .mainText {
@@ -40,4 +46,33 @@
 	.wrapper {
 		padding-top: 42px;
 	}
+}
+
+.pressWrapper {
+	padding: 1.5em;
+
+	p {
+		padding: 0;
+		margin: 0.5em;
+	}
+}
+
+.gfr {
+	color: purple;
+}
+
+.pressSection {
+	font-family: $secondary-font;
+}
+
+.presslink {
+	font-family: $primary-font;
+}
+
+.presslink:hover {
+	color: #000000;
+	font-weight: 700;
+	transition-property: color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in;
 }
