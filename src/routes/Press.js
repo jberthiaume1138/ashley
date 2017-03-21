@@ -15,7 +15,7 @@ export default class Press extends React.Component {
 					<h4 className={styles.headline}>Press</h4>
 					<div className={styles.pressWrapper}>
 						<p><a className={styles.presslink} href="http://fashionreverie.com/?p=2622" target="_blank">Marlon Gobel Spring/Summer 2013 New York Fashion Week</a></p>
-						<p><a className={styles.presslink} href="www.youtube.com/watch?v=BkGY8fOC8jk" target="_blank">Stan Lee's Comikaze Fashion Show</a></p>
+						<p><a className={styles.presslink} href="http://www.youtube.com/watch?v=BkGY8fOC8jk" target="_blank">Stan Lee's Comikaze Fashion Show</a></p>
 						<h4 className={styles.pressSection}>About <span className={styles.gfr}>Go Follow Rabbits...</span></h4>
 						<p><a className={styles.presslink} href="http://girlgonegeekblog.com/2012/08/14/etsy-crush-of-the-week-go-chase-rabbits/" target="_blank">Girl Gone Geek Blog</a></p>
 						<p><a className={styles.presslink} href="www.thehunt.com/finds/FRbyvA-go-follow-rabbits---minecraft-skirt--go-chase-rabbits" target="_blank">The Hunt</a></p>
