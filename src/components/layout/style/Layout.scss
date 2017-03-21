@@ -36,7 +36,7 @@ main {
 
 nav {
 	flex: 0 0 auto;
-	padding-bottom: 1em;
+	padding-top: 2em;
 }
 
 @media all and (max-height: 1024px) and (max-width: 450px) {
@@ -53,9 +53,5 @@ nav {
 	.layout {
 		justify-content: flex-start;
 		align-items: space-between;
-	}
-
-	nav {
-		padding-top: 3em;
 	}
 }

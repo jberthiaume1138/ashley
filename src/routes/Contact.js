@@ -13,7 +13,12 @@ export default class Contact extends React.Component {
 				</div>
 				<div className={styles.textWrapper}>
 					<h4 className={styles.headline}>Contact me</h4>
-					<p className={styles.mainText}></p>
+					<p className={styles.mainText}>LinkedIn - https://www.linkedin.com/in/ashleyberthiaume//</p>
+
+					<p className={styles.mainText}>Instagram - https://www.instagram.com/gofollowrabbits/</p>
+					<p className={styles.mainText}>https://www.facebook.com/GofollowRabbits/</p>
+					<p className={styles.mainText}>Vist the Go Follow Rabbits shop! https://www.etsy.com/shop/gofollowrabbits/</p>
+
 				</div>
 			</div>
 		);
