@@ -39,6 +39,16 @@ nav {
 	padding-top: 2em;
 }
 
+@media all and (max-width: 450px) {
+	.layout {
+		min-height: 100vh;
+		display: flex;
+		flex-flow: column;
+		justify-content: space-between;
+		align-items: stretch;
+	}
+}
+
 @media all and (max-height: 1024px) and (max-width: 450px) {
 	.layout {
 		min-height: 100vh;
