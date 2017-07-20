@@ -1,49 +1,16 @@
 {
   "name": "ashley",
-  "version": "1.0.0",
-  "description": "Ashley Berthiaume - Fashion",
-  "main": "server.js",
-  "scripts": {
-    "clean": "rm -rf ./build/*",
-    "dev": "node_modules/.bin/webpack-dev-server --content-base src --inline --hot",
-    "build": "npm run clean && webpack -p",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jberthiaume1138/ashley.git"
-  },
-  "author": "JAB",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jberthiaume1138/ashley/issues"
-  },
-  "homepage": "https://github.com/jberthiaume1138/ashley#readme",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "file-loader": "^0.11.2",
-    "history": "^4.5.1",
-    "lodash": "^4.17.4",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "react-router": "^3.0.2"
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-scripts": "1.0.10"
   },
-  "devDependencies": {
-    "babel-core": "^6.25.0",
-    "babel-loader": "^7.1.1",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^0.28.4",
-    "eslint": "^4.2.0",
-    "eslint-plugin-react": "^7.1.0",
-    "extract-text-webpack-plugin": "^3.0.0",
-    "html-webpack-plugin": "^2.28.0",
-    "image-webpack-loader": "^3.3.1",
-    "node-sass": "^4.5.3",
-    "normalize.css": "^5.0.0",
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.18.2",
-    "url-loader": "^0.5.9",
-    "webpack": "^3.3.0",
-    "webpack-dev-server": "^2.5.1"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
