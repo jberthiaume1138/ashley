@@ -1,0 +1,35 @@
+.wrapper {
+	width: 100%;
+  margin: 0 auto;
+  padding: 0.75em;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	background-color: white;
+}
+
+.wrapper li {
+	list-style: none;
+}
+
+.navLink {
+	padding: 1em;
+  text-decoration: none;
+	color: #8146db;
+}
+
+.navLink:hover {
+  color: #000000;
+	font-weight: 700;
+	transition-property: color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in;
+}
+
+.navActive {
+	color: #000000;
+}
