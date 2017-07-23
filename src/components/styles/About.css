@@ -1,0 +1,49 @@
+$primary-font: 'Lato', sans-serif;
+$secondary-font: 'Simonetta', cursive;
+
+.wrapper {
+	height: 100%;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	// padding-top: 120px;
+}
+
+.imageWrapper {
+	max-width: 100%;
+	margin: 0 1em;
+}
+
+.textWrapper {
+	max-width: 700px;
+}
+
+.headline {
+	font-family: $primary-font;
+	font-weight: 400;
+	padding: 1.25em 1em 0 1em;
+	font-size: 1.3em;
+	margin: 0 auto;
+	text-align: center;
+	color: #555555;
+}
+
+.mainText {
+  font-family: $secondary-font;
+  font-weight: 300;
+  padding: 1em;
+	margin: 0;
+}
+
+@media all and (max-width: 760px) {
+	.wrapper {
+		flex-flow: column-reverse;
+		align-items: center;
+	}
+}
+
+@media all and (max-width: 450px) {
+	.wrapper {
+		// padding-top: 42px;
+	}
+}
