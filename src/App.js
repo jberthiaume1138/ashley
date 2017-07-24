@@ -24,9 +24,6 @@ export default class App extends Component {
 						<header>
 							<Header />
 						</header>
-						<nav>
-							<Nav />
-						</nav>
 						<main>
 							<Switch>
 								<Route exact path="/" component={Home} />
@@ -36,6 +33,9 @@ export default class App extends Component {
 								<Route path='/contact' component={Contact} />
 							</Switch>
 						</main>
+						<nav>
+							<Nav />
+						</nav>
 					</div>
 
 					{/* <div className={styles.header}>
