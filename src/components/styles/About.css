@@ -1,12 +1,9 @@
-$primary-font: 'Lato', sans-serif;
-$secondary-font: 'Simonetta', cursive;
-
 .wrapper {
 	height: 100%;
 	display: flex;
 	flex-flow: row;
 	justify-content: center;
-	// padding-top: 120px;
+	/*padding-top: 120px;*/
 }
 
 .imageWrapper {
@@ -19,7 +16,7 @@ $secondary-font: 'Simonetta', cursive;
 }
 
 .headline {
-	font-family: $primary-font;
+	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	padding: 1.25em 1em 0 1em;
 	font-size: 1.3em;
@@ -29,7 +26,7 @@ $secondary-font: 'Simonetta', cursive;
 }
 
 .mainText {
-  font-family: $secondary-font;
+  font-family: 'Simonetta', cursive;
   font-weight: 300;
   padding: 1em;
 	margin: 0;
