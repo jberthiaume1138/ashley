@@ -5,15 +5,15 @@
   text-align: center;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  font-size: 1em;
+  font-size: 1.25rem;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-around;
 	background-color: white;
+	max-width: 1000px;
 }
 
 .wrapper li, a {
-	/*list-style: none;*/
 	display: inline-block;
 	text-align: center;
 }

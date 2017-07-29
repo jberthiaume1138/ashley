@@ -11,7 +11,7 @@ header {
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
-	// position: fixed;
+	/*// position: fixed;*/
 	width: 100%;
 	padding: 1em 0;
 
@@ -32,7 +32,7 @@ header {
 	/* Typography */
 	font-weight: 400;
 	color: #000000;
-	font-size: 3em;
+	font-size: 400%;
 	text-align: center;
 }
 
@@ -51,16 +51,16 @@ header {
 	display: none;
 }
 
-@media all and (max-width: 450px) {
+@media all and (max-width: 480px) {
 	.wrapper {
 		padding: 0.25em;
 	}
 
 	.headline {
-		font-size: 2em;
+		font-size: 225%;
 	}
 
-	.subheader {
+	/*.subheader {
 	 	display: none;
-	}
+	}*/
 }
