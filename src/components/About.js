@@ -9,7 +9,7 @@ export default class About extends React.Component {
 		return (
 			<div className={styles.wrapper}>
 				<div className={styles.imageWrapper}>
-					<img src={sketch} alt='sketch' height="400"/>
+					<img src={sketch} alt='sketch' />
 				</div>
 				<div className={styles.textWrapper}>
 					<h4 className={styles.headline}>About me</h4>
