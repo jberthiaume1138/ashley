@@ -1,74 +1,63 @@
 .wrapper {
+	margin: 0 auto;
 	display: flex;
 	flex-flow: row;
 	justify-content: center;
+	padding: 0 1em;
 }
 
 .imageWrapper {
-	margin: 0 1em;
+	flex: 1 0 40%;
 }
 
 .textWrapper {
-	max-width: 700px;
+	flex: 1 0 60%;
+}
+
+.textWrapper, .imageWrapper {
+	padding: 0 1em;
 }
 
 .headline {
-	padding: 1 em;
-	font-size: 1.5em;
-	margin: 0 auto;
-	text-align: center;
-	color: #555555;
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
-}
-
-.mainText {
-  font-family: 'Simonetta', sans-serif;
-  font-weight: 300;
-  padding: 1em;
-	margin: 0;
-}
-
-@media all and (max-width: 760px) {
-	.wrapper {
-		flex-flow: column-reverse;
-		align-items: center;
-	}
-}
-
-@media all and (max-width: 450px) {
-	.wrapper {
-		padding-top: 42px;
-	}
-}
-
-.pressWrapper {
-	padding: 1.5em;
-
-}
-
-.pressWrapper p {
+	font-size: 125%;
+	color: #555555;
 	padding: 0;
-	margin: 0.5em;
+	margin: 0;
+	text-align: center;
 }
 
 .gfr {
 	color: purple;
 }
 
-.pressSection {
+.pressHeader {
 	font-family: 'Simonetta', cursive;
+	font-size: 125%;
+	padding: 0 1em;
 }
 
 .presslink {
 	font-family: 'Lato', sans-serif;
+	text-align: left;
 }
 
 .presslink:hover {
 	color: #000000;
-	/*font-weight: 700;*/
 	text-shadow: .25px 0px .1px;
 	transition-property: text-shadow, color;
 	transition-duration: 0.3s;
 	transition-timing-function: ease-in;
+}
+
+@media all and (max-width: 767px) {
+	.wrapper {
+		flex-flow: column-reverse;
+		align-items: center;
+	}
+
+	.textWrapper, .imageWrapper {
+		padding: 0 0.75em;
+	}
 }

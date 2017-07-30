@@ -9,7 +9,7 @@ export default class Press extends React.Component {
 		return (
 			<div className={styles.wrapper}>
 				<div className={styles.imageWrapper}>
-					<img src={sketch} alt="sketch" height="400" />
+					<img src={sketch} alt="sketch" />
 				</div>
 				<div className={styles.textWrapper}>
 					<h4 className={styles.headline}>Press</h4>
@@ -34,7 +34,7 @@ export default class Press extends React.Component {
 								Stan Lee's Comikaze Fashion Show
 							</a>
 						</p>
-						<h4 className={styles.pressSection}>
+						<h4 className={styles.pressHeader}>
 							About <span className={styles.gfr}>Go Follow Rabbits...</span>
 						</h4>
 						<p>
