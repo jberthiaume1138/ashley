@@ -11,7 +11,6 @@ header {
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
-	/*// position: fixed;*/
 	width: 100%;
 	padding: 1em 0;
 
@@ -43,12 +42,8 @@ header {
 	font-family: 'Simonetta', cursive;
 	font-weight: 300;
 	color: #555555;
-	font-size: 1.25em;
+	font-size: 150%;
 	text-align: center;
-}
-
-#one, #three {
-	display: none;
 }
 
 @media all and (max-width: 480px) {
@@ -60,7 +55,8 @@ header {
 		font-size: 225%;
 	}
 
-	/*.subheader {
-	 	display: none;
-	}*/
+	.subheader {
+		font-size: 100%;
+	}
+
 }

@@ -1,8 +1,7 @@
 .homeWrapper {
-	/*height: 100vh;*/
 	vertical-align: middle;
 	margin: auto;
-	padding: 1em 0;
+	/*padding: 1.50em 0;*/
 	display: flex;
 	flex-flow: row;
 	justify-content: center;
@@ -22,17 +21,8 @@
 	}
 }
 
-@media only screen and (max-height: 768px) and (orientation: landscape){
+@media only screen and (max-height: 768px) and (orientation: landscape) {
 	.container img {
 		max-height: 500px;
 	}
-}
-
-/*nav {
-	position: fixed;
-	bottom: 0;
-}*/
-
-.mobileFirst {
-
 }

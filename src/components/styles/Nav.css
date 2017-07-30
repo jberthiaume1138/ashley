@@ -1,11 +1,7 @@
 .wrapper {
-	width: 100%;
+	width: auto;
   margin: 0 auto;
-  padding: 0.75em;
-  text-align: center;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 1rem;
+  padding: 0.50em;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-around;
@@ -19,14 +15,16 @@
 }
 
 .navLink {
-	padding: 1em;
+	font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+	padding: 0.5em;
   text-decoration: none;
 	color: #8146db;
 }
 
 .navLink:hover {
   color: #000000;
-	/*font-weight: 700;*/
 	text-shadow: .25px 0px .1px;
 	transition-property: text-shadow, color;
 	transition-duration: 0.3s;
@@ -35,4 +33,10 @@
 
 .navActive {
 	color: #000000;
+}
+
+@media only screen and (min-width: 768px) {
+	.navLink {
+		font-size: 1.25rem;
+	}
 }
