@@ -1,6 +1,7 @@
 import React from 'react';
 
 import sketch from '../images/comp-sketch-3.jpg';
+import gfr from '../images/gfr-banner.jpg';
 
 import styles from './styles/Press.css';
 
@@ -37,6 +38,9 @@ export default class Press extends React.Component {
 						<h4 className={styles.pressHeader}>
 							About <span className={styles.gfr}>Go Follow Rabbits...</span>
 						</h4>
+						<div className={[styles.imageWrapper, styles.gfrBanner].join(' ')} >
+							<img src={gfr} alt="go follow rabbits" />
+						</div>
 						<p>
 							<a
 								className={styles.presslink}
