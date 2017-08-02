@@ -11,7 +11,7 @@ export default class Press extends React.Component {
 			<div className={styles.wrapper}>
 				<div className={styles.imageWrapper}>
 					<img src={sketch} alt="sketch" />
-				</div>
+			</div>
 				<div className={styles.textWrapper}>
 					<h4 className={styles.headline}>Press</h4>
 					<div className={styles.pressWrapper}>
@@ -39,7 +39,14 @@ export default class Press extends React.Component {
 							About <span className={styles.gfr}>Go Follow Rabbits...</span>
 						</h4>
 						<div className={[styles.imageWrapper, styles.gfrBanner].join(' ')} >
-							<img src={gfr} alt="go follow rabbits" />
+							<a
+								className={styles.presslink}
+								href='https://www.etsy.com/shop/gofollowrabbits/'
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<img src={gfr} alt="go follow rabbits" />
+							</a>
 						</div>
 						<p>
 							<a
