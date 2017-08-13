@@ -2,6 +2,7 @@ import React from 'react';
 
 import sketch from '../images/comp-sketch-2.jpg';
 import gfr from '../images/gfr-banner.jpg';
+// import bunny from '../images/runRabbitLogoColor.jpg';
 
 import styles from './styles/Contact.css';
 
@@ -28,6 +29,9 @@ export default class Contact extends React.Component {
 						<img src={gfr} alt="Go Follow Rabbits banner" />
 					</div>
 					<p className={styles.mainText}>
+						<a>Facebook</a>
+						<a>Twitter</a>
+						<a>Instagram</a>
 						<a
 							className={styles.contactLink}
 							target="_blank"
