@@ -20,7 +20,8 @@
   font-size: 1em;
 	padding: 0.5em;
   text-decoration: none;
-	color: #8146db;
+	/*color: #8146db;*/
+	color: purple;
 }
 
 .navLink:hover {

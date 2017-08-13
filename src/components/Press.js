@@ -38,7 +38,14 @@ export default class Press extends React.Component {
 					</p>
 					<div className={styles.gfrWrapper}>
 						<div className={styles.gfrHeader}>
-							<img src={gfr} alt='Go Follow Rabbits banner' />
+							<a
+								className={styles.presslink}
+								href='https://www.etsy.com/shop/gofollowrabbits/'
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<img src={gfr} alt='Go Follow Rabbits banner' />
+							</a>
 						</div>
 						<div className={styles.gfrContent}>
 							<div className={styles.gfrText}>
