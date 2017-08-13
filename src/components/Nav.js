@@ -34,13 +34,13 @@ const Nav = () => {
 				</NavLink>
 			</li>
 			<li>
-				<NavLink
+				{/* <NavLink
 					className={styles.navLink}
 					activeClassName={styles.navActive}
 					to="contact"
-				>
+					>
 					Contact
-				</NavLink>
+				</NavLink> */}
 			</li>
 		</ul>
 	);
