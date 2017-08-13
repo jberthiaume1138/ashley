@@ -9,15 +9,15 @@
 	padding: 0 1em;
 }
 
-.imageWrapper {
+.sketchWrapper {
 	flex: 1 0 40%;
 }
 
-.textWrapper {
+.contentWrapper {
 	flex: 1 0 60%;
 }
 
-.textWrapper, .imageWrapper {
+.contentWrapper, .sketchWrapper {
 	padding: 0 1em;
 }
 
@@ -29,6 +29,25 @@
 	padding: 0;
 	margin: 0;
 	text-align: center;
+}
+
+.iconRow {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.iconRow .imageWrapper {
+	flex: 0 1 60px;
+	padding: 0.25em;
+}
+
+.bunny {
+	/*transform: scaleX(-1);
+ 	filter: FlipH;*/
+	flex: 1 0 auto;
+	padding: 0 0.5em;
 }
 
 .mainText {

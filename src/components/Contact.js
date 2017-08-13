@@ -2,7 +2,13 @@ import React from 'react';
 
 import sketch from '../images/comp-sketch-2.jpg';
 import gfr from '../images/gfr-banner.jpg';
-// import bunny from '../images/runRabbitLogoColor.jpg';
+import bunny from '../images/standing-rabbit-bw.jpg';
+
+import linkedin from '../images/logos/005-linkedin.png';
+import email from '../images/logos/email.png';
+import twitter from '../images/logos/006-twitter.png';
+import facebook from '../images/logos/007-facebook.png';
+import instagram from '../images/logos/008-instagram.png';
 
 import styles from './styles/Contact.css';
 
@@ -10,44 +16,84 @@ export default class Contact extends React.Component {
 	render() {
 		return (
 			<div className={styles.wrapper}>
-				<div className={styles.imageWrapper}>
-					<img src={sketch} alt="sketch" height="400" />
+				<div className={styles.sketchWrapper}>
+					<img src={sketch} alt='sketch' />
 				</div>
-				<div className={styles.textWrapper}>
+				<div className={styles.contentWrapper}>
 					<h4 className={styles.headline}>Contact me</h4>
-					<p className={styles.mainText}>
-						<a
-							className={styles.contactLink}
-							target="_blank"
-							rel="noopener noreferrer"
-							to="https://www.linkedin.com/in/ashleyberthiaume"
-						>
-							LinkedIn
-						</a>
-					</p>
-					<div className={styles.imageWrapper}>
-						<img src={gfr} alt="Go Follow Rabbits banner" />
+					<div className={styles.iconRow}>
+						<div className={styles.imageWrapper}>
+							<a
+								className={styles.contactLink}
+								target='_blank'
+								rel='noopener noreferrer'
+								href='https://www.linkedin.com/in/ashleyberthiaume'
+							>
+								<img src={linkedin} alt='linkedin icon' />
+							</a>
+						</div>
+						<div className={styles.imageWrapper}>
+							<a
+								className={styles.contactLink}
+								target='_blank'
+								rel='noopener noreferrer'
+								href='https://www.linkedin.com/in/ashleyberthiaume'
+							>
+								<img src={email} alt='email icon' />
+							</a>
+						</div>
 					</div>
-					<p className={styles.mainText}>
-						<a>Facebook</a>
-						<a>Twitter</a>
-						<a>Instagram</a>
+
+					<div className={styles.imageWrapper}>
+						<img src={gfr} alt='Go Follow Rabbits banner' />
+					</div>
+					<div className={styles.iconRow}>
+						<div className={styles.imageWrapper}>
+							<a
+								className={styles.contactLink}
+								target='_blank'
+								rel='noopener noreferrer'
+								href='https://www.facebook.com/GofollowRabbits/'
+							>
+								<img src={facebook} alt="facebook icon" />
+							</a>
+						</div>
+						<div className={styles.imageWrapper}>
+							<a
+								className={styles.contactLink}
+								target='_blank'
+								rel='noopener noreferrer'
+								href='https://twitter.com/gofollowrabbits/'
+							>
+								<img src={twitter} alt="twitter icon" />
+							</a>
+						</div>
+						<div className={styles.imageWrapper}>
+							<a
+								className={styles.contactLink}
+								target='_blank'
+								rel='noopener noreferrer'
+								href='https://www.instagram.com/gofollowrabbits/'
+							>
+								<img src={instagram} alt="instagram icon" />
+							</a>
+						</div>
+					</div>
+					<div>
+						<p className={styles.mainText}>Vist the Go Follow Rabbits shop!
+							https://www.etsy.com/shop/gofollowrabbits/
+						</p>
+					</div>
+					<div className={[styles.imageWrapper, styles.bunny].join(' ')}>
 						<a
-							className={styles.contactLink}
+							className={styles.presslink}
+							href='https://www.etsy.com/shop/gofollowrabbits/'
 							target="_blank"
 							rel="noopener noreferrer"
-							to="https://www.instagram.com/gofollowrabbits/"
 						>
-							Instagram
+							<img src={bunny} alt="Go Follow Rabbits logo" />
 						</a>
-					</p>
-					<p className={styles.mainText}>
-						https://www.facebook.com/GofollowRabbits/
-					</p>
-					<p className={styles.mainText}>
-						Vist the Go Follow Rabbits shop!
-						https://www.etsy.com/shop/gofollowrabbits/
-					</p>
+					</div>
 				</div>
 			</div>
 		);

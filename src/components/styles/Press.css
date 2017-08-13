@@ -28,14 +28,6 @@
 	text-align: center;
 }
 
-.gfrHeader {
-	font-family: 'Simonetta', cursive;
-	font-size: 135%;
-	margin: 1.50em 0 0 0;
-	color: purple;
-	text-align: center;
-}
-
 .presslink {
 	font-family: 'Lato', sans-serif;
 	text-align: left;
@@ -49,25 +41,44 @@
 	transition-timing-function: ease-in;
 }
 
+.gfrWrapper {
+	padding: 1em 0;
+}
+
+.gfrHeader {
+
+}
+
 .gfrContent {
 	margin: 0 auto;
 	display: flex;
 	flex-flow: row;
 	justify-content: center;
-	align-items: center;
-	padding: 0;
+	align-items: flex-end;
+	padding: 1em 0 0 0;
 }
 
 .gfrText {
-	flex: 1 0 40%;
+	flex: 0 0 60%;
 	align-self: flex-start;
+	padding-left: 1em;
 }
 
 .bunny {
-	transform: scaleX(-1);
- 	filter: FlipH;
-	flex: 1 0 60%;
-	padding: 0 0.5em;
+	flex: 1 0 40%;
+	padding: 0 1em 0 0;
+}
+
+.gfrPressList {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.gfrPressList li {
+	padding-top: 0.75em;
+	display: block;
+	width: auto;
 }
 
 @media all and (max-width: 767px) {
@@ -80,14 +91,9 @@
 		padding: 0 0.75em;
 	}
 
-	.gfrHeader {
-		margin: 1.50em 0 1em 0;
-	}
-
-	.gfrContent {
-		flex-flow: column-reverse;
-		align-items: center;
-		padding: 0;
+	.bunny {
+		flex: auto auto 50px;
+		align-self: flex-end;
 	}
 }
 
