@@ -6,17 +6,22 @@
 	padding: 0 1em;
 }
 
-.imageWrapper {
+.sketchWrapper {
 	flex: 1 0 40%;
 }
 
-.textWrapper {
+.contentWrapper {
 	flex: 1 0 60%;
 }
 
-.textWrapper, .imageWrapper {
+.textWrapper, .contentWrapper {
 	padding: 0 1em;
 }
+
+.textWrapper {
+
+}
+
 
 .headline {
 	font-family: 'Lato', sans-serif;
@@ -38,13 +43,32 @@
 	padding: 1em 0;
 }
 
+.iconRow {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 1em;
+}
+
+.iconRow .imageWrapper {
+	flex: 0 1 60px;
+	padding: 0.25em;
+}
+
+.bunny {
+	margin: 0 auto;
+	max-width: 250px;
+	padding: 1em 0;
+}
+
 @media all and (max-width: 767px) {
 	.wrapper {
 		flex-flow: column-reverse;
 		align-items: center;
 	}
 
-	.textWrapper, .imageWrapper {
+	.textWrapper, .sketchWrapper {
 		padding: 0 0.75em;
 	}
 }
