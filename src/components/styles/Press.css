@@ -32,6 +32,8 @@
 	font-family: 'Simonetta', cursive;
 	font-size: 135%;
 	margin: 1.50em 0 0 0;
+	color: purple;
+	text-align: center;
 }
 
 .presslink {
@@ -57,7 +59,7 @@
 	flex-flow: row;
 	justify-content: center;
 	align-items: center;
-	padding: 0 1em;
+	padding: 0;
 }
 
 .gfrText {
@@ -68,14 +70,13 @@
 .gfrText p {
 }
 
-.gfr {
-	color: purple;
-}
+
 
 .bunny {
 	transform: scaleX(-1);
  	filter: FlipH;
 	flex: 1 0 60%;
+	padding: 0 0.5em;
 }
 
 @media all and (max-width: 767px) {
@@ -96,5 +97,19 @@
 		flex-flow: column-reverse;
 		align-items: center;
 		padding: 0;
+	}
+}
+
+@media all and (min-width: 767px) and (max-width: 768px) {
+	.sketchWrapper {
+		flex: 1 0 48%;
+	}
+
+	.contentWrapper {
+		flex: 1 0 52%;
+	}
+
+	.gfrText {
+		line-height: 115%;
 	}
 }

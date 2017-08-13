@@ -35,9 +35,7 @@ export default class Press extends React.Component {
 						</a>
 					</p>
 					<div className={styles.gfrWrapper}>
-						<h4 className={styles.gfrHeader}>
-							<span className={styles.gfr}>Go Follow Rabbits...</span>
-						</h4>
+						<h4 className={styles.gfrHeader}>Go Follow Rabbits...</h4>
 						<div className={styles.gfrContent}>
 							<div className={styles.gfrText}>
 								<p>
