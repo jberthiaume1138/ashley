@@ -18,10 +18,13 @@
 	padding: 0 1em;
 }
 
+.sketchWrapper img {
+	padding-bottom: 1em;
+}
+
 .textWrapper {
 
 }
-
 
 .headline {
 	font-family: 'Lato', sans-serif;
@@ -38,9 +41,9 @@
   font-family: 'Simonetta', cursive;
   font-weight: 300;
 	font-size: 1.125em;
-	line-height: 125%;
+	line-height: 120%;
 	margin: 0 auto;
-	padding: 1em 0;
+	padding: 0.5em 0;
 }
 
 .iconRow {
@@ -52,15 +55,55 @@
 }
 
 .iconRow .imageWrapper {
-	flex: 0 1 60px;
+	flex: 0 1 50px;
 	padding: 0.25em;
 }
 
-.bunny {
+.bunnyRow {
 	margin: 0 auto;
-	max-width: 250px;
-	padding: 1em 0;
+	width: 100%;
+	padding: 1.5em 0;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
 }
+
+/*.bunnyRow div {
+	flex: 0 0 30%;
+}*/
+
+.bunny {
+	flex: 0 0 40%;
+}
+
+.iconWrapper {
+	flex: 0 0 30%;
+	max-width: 84px;
+	height: auto;
+	padding-left: 2em;
+}
+
+.bunnyCaption {
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*.bunnyWrapper {
+	width: 100%;
+
+	/*flex: 0 1 50px;
+	padding: 0.25em;*/
+/*}
+
+.bunnyWrapper img {
+	max-height: 150px;
+	padding: 0 1em;
+}
+
+.iconWrapper {
+	max-height: 42px;
+}*/*/
 
 @media all and (max-width: 767px) {
 	.wrapper {

@@ -33,15 +33,15 @@ const Nav = () => {
 					Press
 				</NavLink>
 			</li>
-			<li>
+			{/* <li>
 				{/* <NavLink
 					className={styles.navLink}
 					activeClassName={styles.navActive}
 					to="contact"
 					>
 					Contact
-				</NavLink> */}
-			</li>
+				</NavLink>
+			</li> */}
 		</ul>
 	);
 };

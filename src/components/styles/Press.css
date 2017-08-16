@@ -108,5 +108,10 @@
 
 	.gfrText {
 		line-height: 115%;
+		flex: 0 0 50%;
+	}
+
+	.bunny {
+		flex: 0 0 50%;
 	}
 }
