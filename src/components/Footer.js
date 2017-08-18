@@ -19,6 +19,7 @@ const Footer = () => {
 				<img src={instagram} alt="instagram icon" />
 				<img src={twitter} alt="twitter icon" />
 				<img src={tumblr} alt="tumblr icon" />
+				<img src={etsy} alt="etsy icon" />
 				<a
 					className={styles.contactLink}
 					target='_blank'

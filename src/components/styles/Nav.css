@@ -16,12 +16,12 @@
 
 .navLink {
 	font-family: 'Lato', sans-serif;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 1em;
 	padding: 0.5em;
   text-decoration: none;
-	/*color: #8146db;*/
-	color: purple;
+	color: #8146db;
+	/*color: purple;*/
 }
 
 .navLink:hover {

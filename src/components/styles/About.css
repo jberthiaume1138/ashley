@@ -12,14 +12,11 @@
 
 .contentWrapper {
 	flex: 1 0 60%;
-}
-
-.textWrapper, .contentWrapper {
 	padding: 0 1em;
 }
 
 .sketchWrapper img {
-	padding-bottom: 1em;
+	/*padding: 0 0 1em 0;*/
 }
 
 .textWrapper {
@@ -28,7 +25,7 @@
 
 .headline {
 	font-family: 'Lato', sans-serif;
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 1.3em;
 	color: #555555;
 	line-height: 125%;
@@ -39,7 +36,7 @@
 
 .mainText {
   font-family: 'Simonetta', cursive;
-  font-weight: 300;
+  font-weight: 400;
 	font-size: 1.125em;
 	line-height: 120%;
 	margin: 0 auto;
@@ -105,13 +102,46 @@
 	max-height: 42px;
 }*/*/
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 320px) {
 	.wrapper {
 		flex-flow: column-reverse;
+		justify-content: center;
 		align-items: center;
 	}
 
 	.textWrapper, .sketchWrapper {
 		padding: 0 0.75em;
+	}
+}
+
+
+@media all and (max-width: 767px) {
+	.wrapper {
+		flex-flow: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.textWrapper, .sketchWrapper {
+		padding: 0 0.75em;
+	}
+}
+
+@media only screen and (max-height: 768px) and (orientation: landscape) {
+	/** {
+		outline: red solid 1px;
+	}*/
+
+	.sketchWrapper {
+		flex: 1 1 40%;
+		/*max-width: 400px;*/
+	}
+
+	.contentWrapper {
+		flex: 1 1 60%;
+	}
+
+	.bunny {
+		max-width: 175px;
 	}
 }
