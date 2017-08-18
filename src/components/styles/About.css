@@ -20,7 +20,7 @@
 }
 
 .textWrapper {
-
+	padding: 0;
 }
 
 .headline {
@@ -100,48 +100,55 @@
 
 .iconWrapper {
 	max-height: 42px;
-}*/*/
+}*/
 
-@media all and (max-width: 320px) {
-	.wrapper {
-		flex-flow: column-reverse;
-		justify-content: center;
-		align-items: center;
-	}
+/*small ff*/
+@media only screen
+	and (max-width: 480px) {
+		.wrapper {
+			flex-flow: column-reverse;
+			justify-content: center;
+			align-items: center;
+		}
 
-	.textWrapper, .sketchWrapper {
-		padding: 0 0.75em;
-	}
+		.textWrapper, .sketchWrapper {
+			/*padding: 0 0.75em;*/
+		}
+
+		.contentWrapper, .textWrapper {
+			padding: 0;
+		}
 }
 
-
-@media all and (max-width: 767px) {
-	.wrapper {
-		flex-flow: column-reverse;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.textWrapper, .sketchWrapper {
-		padding: 0 0.75em;
-	}
+@media only screen
+	and (min-device-width : 768px)
+	and (max-device-width : 1024px)
+	and (orientation : landscape) {
+		/*for landscape ipad*/
 }
 
-@media only screen and (max-height: 768px) and (orientation: landscape) {
-	/** {
-		outline: red solid 1px;
-	}*/
+@media only screen
+	and (min-device-width : 768px)
+	and (max-device-width : 1024px)
+	and (orientation : landscape) {
+		/*for portrait ipad*/
+}
 
-	.sketchWrapper {
-		flex: 1 1 40%;
-		/*max-width: 400px;*/
-	}
+/*ipad pro portrait*/
+@media only screen
+	and (min-device-width: 1024px)
+	and (max-device-width: 1366px)
+	and (orientation: portrait) {
+		.sketchWrapper {
+			flex: 1 0 40%;
+		}
 
-	.contentWrapper {
-		flex: 1 1 60%;
-	}
+		.contentWrapper {
+			flex: 1 0 60%;
+			padding: 0 1em;
+		}
 
-	.bunny {
-		max-width: 175px;
-	}
+		.bunny {
+			flex: 0 0 35%;
+		}
 }
