@@ -4,13 +4,13 @@ import sketch from '../images/comp-sketch-1.jpg';
 import sketch2 from '../images/comp-sketch-2.jpg';
 import bunny from '../images/gfr-bunny.jpg';
 
-import linkedin from '../images/logos/005-linkedin.png';
 import email from '../images/logos/email.png';
-import twitter from '../images/logos/006-twitter.png';
-import facebook from '../images/logos/007-facebook.png';
-import instagram from '../images/logos/008-instagram.png';
-import tumblr from '../images/logos/003-tumblr.png';
-import etsy from '../images/logos/004-etsy.png';
+import linkedin from '../images/logos/linkedin.png';
+import facebook from '../images/logos/facebook.png';
+import instagram from '../images/logos/instagram.png';
+import twitter from '../images/logos/twitter.png';
+import tumblr from '../images/logos/tumblr.png';
+import etsy from '../images/logos/etsy.png';
 
 import styles from './styles/About.css';
 
@@ -20,7 +20,7 @@ export default class About extends React.Component {
 			<div className={styles.wrapper}>
 				<div className={styles.sketchWrapper}>
 					<img src={sketch} alt='sketch' />
-					{/* <img src={sketch2} alt='sketch' /> */}
+					<img className={styles.secondarySketch} src={sketch2} alt='sketch' />
 				</div>
 				<div className={styles.contentWrapper}>
 					<div className={styles.textWrapper}>
@@ -35,7 +35,7 @@ export default class About extends React.Component {
 								className={styles.contactLink}
 								target='_blank'
 								rel='noopener noreferrer'
-								href='https://www.linkedin.com/in/ashleyberthiaume'
+								href='/'
 							>
 								<img src={email} alt='email icon' />
 							</a>
@@ -45,7 +45,7 @@ export default class About extends React.Component {
 								className={styles.contactLink}
 								target='_blank'
 								rel='noopener noreferrer'
-								href='https://www.linkedin.com/in/ashleyberthiaume'
+								href='https://www.linkedin.com/in/ashleyberthiaume/'
 							>
 								<img src={linkedin} alt='linkedin icon' />
 							</a>
@@ -85,7 +85,7 @@ export default class About extends React.Component {
 								className={styles.contactLink}
 								target='_blank'
 								rel='noopener noreferrer'
-								href='https://http://gofollowrabbits.tumblr.com//'
+								href='https://gofollowrabbits.tumblr.com//'
 							>
 								<img src={tumblr} alt="tumblr icon" />
 							</a>
@@ -105,11 +105,14 @@ export default class About extends React.Component {
 								<img src={etsy} alt='etsy logo' />
 							</a>
 						</div>
-					</div>
-					<div className={styles.textWrapper}>
-						<p className={[styles.mainText, styles.bunnyCaption].join(' ')}>Be sure to check out the Go Follow Rabbits Etsy storefront!</p>
+						<div className={styles.textWrapper}>
+							<p className={[styles.mainText, styles.bunnyCaption].join(' ')}>Be sure to check out the Go Follow Rabbits Etsy storefront!</p>
+						</div>
 					</div>
 				</div>
+
+
+
 			</div>
 		);
 	}

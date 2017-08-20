@@ -3,6 +3,7 @@
 	display: flex;
 	flex-flow: row;
 	justify-content: center;
+	align-items: flex-start;
 	padding: 0 1em;
 }
 
@@ -15,8 +16,8 @@
 	padding: 0 1em;
 }
 
-.sketchWrapper img {
-	/*padding: 0 0 1em 0;*/
+.secondarySketch {
+	display: none;
 }
 
 .textWrapper {
@@ -61,22 +62,18 @@
 	width: 100%;
 	padding: 1.5em 0;
 	display: flex;
-	flex-flow: row nowrap;
+	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
 }
 
-/*.bunnyRow div {
-	flex: 0 0 30%;
-}*/
-
 .bunny {
-	flex: 0 0 40%;
+	flex: 0 0 50%;
 }
 
 .iconWrapper {
-	flex: 0 0 30%;
-	max-width: 84px;
+	flex: 0 0 50%;
+	max-width: 144px;
 	height: auto;
 	padding-left: 2em;
 }
@@ -86,52 +83,8 @@
 	text-align: center;
 }
 
-/*.bunnyWrapper {
-	width: 100%;
-
-	/*flex: 0 1 50px;
-	padding: 0.25em;*/
-/*}
-
-.bunnyWrapper img {
-	max-height: 150px;
-	padding: 0 1em;
-}
-
-.iconWrapper {
-	max-height: 42px;
-}*/
-
-/*small ff*/
-@media only screen
-	and (max-width: 480px) {
-		.wrapper {
-			flex-flow: column-reverse;
-			justify-content: center;
-			align-items: center;
-		}
-
-		.textWrapper, .sketchWrapper {
-			/*padding: 0 0.75em;*/
-		}
-
-		.contentWrapper, .textWrapper {
-			padding: 0;
-		}
-}
-
-@media only screen
-	and (min-device-width : 768px)
-	and (max-device-width : 1024px)
-	and (orientation : landscape) {
-		/*for landscape ipad*/
-}
-
-@media only screen
-	and (min-device-width : 768px)
-	and (max-device-width : 1024px)
-	and (orientation : landscape) {
-		/*for portrait ipad*/
+.bunnyRow .textWrapper {
+	align-self: center;
 }
 
 /*ipad pro portrait*/
@@ -145,10 +98,103 @@
 
 		.contentWrapper {
 			flex: 1 0 60%;
-			padding: 0 1em;
 		}
 
 		.bunny {
 			flex: 0 0 35%;
+		}
+}
+
+/*for landscape ipad*/
+@media only screen
+	and (min-device-width : 768px)
+	and (max-device-width : 1024px)
+	and (orientation : landscape) {
+
+		.sketchWrapper {
+			flex: 1 0 35%;
+		}
+
+		.contentWrapper {
+			flex: 1 0 65%;
+		}
+
+		.bunny {
+			flex: 0 0 30%;
+		}
+
+		.mainText {
+		  font-family: 'Simonetta', cursive;
+		  font-weight: 400;
+			font-size: 1em;
+			line-height: 120%;
+			margin: 0 auto;
+			padding: 0.5em 0;
+		}
+
+		.iconRow .imageWrapper {
+			flex: 0 1 42px;
+			padding: 0.25em;
+		}
+}
+
+/*for portrait ipad*/
+@media only screen
+	and (min-device-width : 768px)
+	and (max-device-width : 1023px)
+	and (orientation : portrait) {
+		.mainText {
+		  font-family: 'Simonetta', cursive;
+		  font-weight: 400;
+			font-size: 1em;
+			line-height: 125%;
+			margin: 0 auto;
+			padding: 0.5em 0;
+		}
+
+		.secondarySketch {
+			display: block;
+
+		}
+		.sketchWrapper {
+			flex: 1 0 30%;
+		}
+
+		.contentWrapper {
+			flex: 1 0 70%;
+		}
+
+		.bunny {
+			flex: 0 0 45%;
+		}
+
+		.sketchWrapper img {
+			padding-bottom: 1em;
+		}
+
+		.iconRow {
+			padding: 2em 0;
+		}
+}
+
+/*small ff*/
+@media only screen
+	and (max-width: 480px) {
+		.wrapper {
+			flex-flow: column-reverse;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.contentWrapper, .textWrapper {
+			padding: 0;
+		}
+
+		.bunny {
+			flex: 0 0 45%;
+		}
+
+		.bunnyRow {
+			flex-flow: wrap-reverse;
 		}
 }

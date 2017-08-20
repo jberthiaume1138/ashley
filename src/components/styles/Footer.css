@@ -12,10 +12,14 @@
 	width: 100%;
 	height: auto;
 	padding: 0.25em;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
 }
 
 .icons img {
-	height: 16px;
+	height: 18px;
 	margin: 0 1em;
 	transition: filter .3s ease-in-out;
 	filter: grayscale(100%) opacity(50%);
