@@ -1,7 +1,6 @@
 import React from 'react';
 
 import sketch from '../images/comp-sketch-3.jpg';
-// import bunny from '../images/gfr-bunny.jpg';
 import bunny from '../images/standing-rabbit-color.jpg';
 import gfr from '../images/gfr-banner.jpg';
 
@@ -29,7 +28,7 @@ export default class Press extends React.Component {
 					<p>
 						<a
 							className={styles.presslink}
-							href="http://www.youtube.com/watch?v=BkGY8fOC8jk"
+							href="https://www.youtube.com/watch?v=BkGY8fOC8jk"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
@@ -53,27 +52,27 @@ export default class Press extends React.Component {
 									<li>
 										<a
 											className={styles.presslink}
-											href="http://girlgonegeekblog.com/2012/08/14/etsy-crush-of-the-week-go-chase-rabbits/"
+											href="https://girlgonegeekblog.com/2012/08/14/etsy-crush-of-the-week-go-chase-rabbits/"
 											target="_blank"
 											rel="noopener noreferrer"
 										>
 											Girl Gone Geek Blog
 										</a>
 									</li>
-									<li>
+									{/* <li>
 										<a
 											className={styles.presslink}
-											href="www.thehunt.com/finds/FRbyvA-go-follow-rabbits---minecraft-skirt--go-chase-rabbits"
+											href="http://www.thehunt.com/finds/FRbyvA-go-follow-rabbits---minecraft-skirt--go-chase-rabbits"
 											target="_blank"
 											rel="noopener noreferrer"
 										>
 											The Hunt
 										</a>
-									</li>
+									</li> */}
 									<li>
 										<a
 											className={styles.presslink}
-											href="www.cnet.com/news/mars-panoramic-skirt-wrap-a-rover-around-your-waist/"
+											href="https://www.cnet.com/news/mars-panoramic-skirt-wrap-a-rover-around-your-waist/"
 											target="_blank"
 											rel="noopener noreferrer"
 										>
@@ -93,7 +92,7 @@ export default class Press extends React.Component {
 									<li>
 										<a
 											className={styles.presslink}
-											href="http://laughingsquid.com/space-shuttle-launch-skirt/"
+											href="https://laughingsquid.com/space-shuttle-launch-skirt/"
 											target="_blank"
 											rel="noopener noreferrer"
 										>
@@ -103,7 +102,7 @@ export default class Press extends React.Component {
 									<li>
 										<a
 											className={styles.presslink}
-											href="http://settostunning.com/2013/01/07/sts-spotlight-go-follow-rabbits-geek-chic-skirts/"
+											href="https://settostunning.com/2013/01/07/sts-spotlight-go-follow-rabbits-geek-chic-skirts/"
 											target="_blank"
 											rel="noopener noreferrer"
 										>
@@ -113,7 +112,7 @@ export default class Press extends React.Component {
 									<li>
 										<a
 											className={styles.presslink}
-											href="www.buzzfeed.com/donnad/10-pop-culture-skirts-have-my-fashion-sense-tingli?utm_term=.gv6B35rpl4#.fjAAaR8W0N"
+											href="https://www.buzzfeed.com/donnad/10-pop-culture-skirts-have-my-fashion-sense-tingli?utm_term=.gv6B35rpl4#.fjAAaR8W0N"
 											target="_blank"
 											rel="noopener noreferrer"
 										>
