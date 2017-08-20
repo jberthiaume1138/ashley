@@ -1,8 +1,9 @@
 import React from 'react';
 
+import Colossus from './Colossus';
+
 import styles from './styles/Footer.css';
 
-import email from '../images/logos/email.png';
 import linkedin from '../images/logos/linkedin.png';
 import facebook from '../images/logos/facebook.png';
 import instagram from '../images/logos/instagram.png';
@@ -14,16 +15,7 @@ const Footer = () => {
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.icons}>
-				<div className={styles.imageWrapper}>
-					<a
-						className={styles.contactLink}
-						target='_blank'
-						rel='noopener noreferrer'
-						href='/'
-					>
-						<img src={email} alt='email icon' />
-					</a>
-				</div>
+				<Colossus />
 				<div className={styles.imageWrapper}>
 					<a
 						className={styles.contactLink}

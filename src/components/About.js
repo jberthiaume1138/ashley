@@ -1,10 +1,12 @@
 import React from 'react';
 
+import Colossus from './Colossus';
+
 import sketch from '../images/comp-sketch-1.jpg';
 import sketch2 from '../images/comp-sketch-2.jpg';
 import bunny from '../images/gfr-bunny.jpg';
 
-import email from '../images/logos/email.png';
+// import email from '../images/logos/email.png';
 import linkedin from '../images/logos/linkedin.png';
 import facebook from '../images/logos/facebook.png';
 import instagram from '../images/logos/instagram.png';
@@ -31,14 +33,7 @@ export default class About extends React.Component {
 					</div>
 					<div className={styles.iconRow}>
 						<div className={styles.imageWrapper}>
-							<a
-								className={styles.contactLink}
-								target='_blank'
-								rel='noopener noreferrer'
-								href='/'
-							>
-								<img src={email} alt='email icon' />
-							</a>
+							<Colossus />
 						</div>
 						<div className={styles.imageWrapper}>
 							<a
