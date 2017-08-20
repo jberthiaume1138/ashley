@@ -22,7 +22,6 @@ export default class Colossus extends React.Component {
 		this.setState({
 			rasputin: `${p}${r}${y}@${d}.${e}`
 		})
-		// console.log(this.state.rasputin);
 	}
 	render() {
 		return (
