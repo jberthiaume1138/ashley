@@ -89,28 +89,31 @@
 
 @media only screen and (max-height: 800px) {
 	.sketchWrapper {
-		flex: 1 0 35%;
+		flex: 1 0 33%;
 	}
 
 	.contentWrapper {
-		flex: 1 0 65%;
+		flex: 1 0 67%;
 	}
 
+	.bunnyRow {
+		padding: 1em 0;
+	}
 	.bunny {
-		flex: 0 0 30%;
+		flex: 0 0 25%;
 	}
 
 	.mainText {
 		font-family: 'Simonetta', cursive;
 		font-weight: 400;
 		font-size: 1em;
-		line-height: 120%;
+		line-height: 115%;
 		margin: 0 auto;
 		padding: 0.5em 0;
 	}
 
 	.iconRow {
-		padding-top: 0.75em;
+		padding-top: 0.66em;
 	}
 
 	.iconRow .imageWrapper {

@@ -31,11 +31,11 @@
 
 @media only screen and (max-height: 800px) {
 	.imageWrapper img {
-		height: 450px;
+		max-height: 450px;
 	}
 }
-/*ipad*/
 
+/*ipad*/
 @media only screen
 	and (min-device-width : 768px)
 	and (max-device-width : 1024px)
