@@ -3,20 +3,23 @@
 	display: flex;
 	flex-flow: row;
 	justify-content: center;
+	align-items: flex-start;
 	padding: 0 1em;
 }
 
 .sketchWrapper {
+	/*padding: 0;*/
 	flex: 1 0 40%;
 }
 
 .contentWrapper {
 	flex: 1 0 60%;
-}
-
-.contentWrapper, .sketchWrapper {
 	padding: 0 1em;
 }
+
+/*.contentWrapper, .sketchWrapper {
+	padding: 0 1em;
+}*/
 
 .headline {
 	font-family: 'Lato', sans-serif;
@@ -53,7 +56,7 @@
 	margin: 0 auto;
 	display: flex;
 	flex-flow: row;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: flex-end;
 	padding: 1em 0 0 0;
 }
@@ -81,29 +84,13 @@
 	width: auto;
 }
 
-@media all and (max-width: 767px) {
-	.wrapper {
-		flex-flow: column-reverse;
-		align-items: center;
-	}
-
-	.contentWrapper, .sketchWrapper {
-		padding: 0 0.75em;
-	}
-
-	.bunny {
-		flex: auto auto 50px;
-		align-self: flex-end;
-	}
-}
-
-@media all and (min-width: 767px) and (max-width: 768px) {
+@media all and (max-height: 800px) {
 	.sketchWrapper {
-		flex: 1 0 48%;
+		flex: 1 0 33%;
 	}
 
 	.contentWrapper {
-		flex: 1 0 52%;
+		flex: 1 0 67%;
 	}
 
 	.gfrText {
@@ -112,6 +99,51 @@
 	}
 
 	.bunny {
-		flex: 0 0 50%;
+		flex: 0 0 30%;
 	}
 }
+
+@media all and (max-width: 767px) {
+	.wrapper {
+		flex-flow: column-reverse;
+		align-items: center;
+	}
+
+	.bunny {
+		flex: auto auto 50px;
+		align-self: flex-end;
+	}
+}
+
+/*for portrait ipad*/
+@media only screen
+	and (min-device-width : 768px)
+	and (max-device-width : 1023px)
+	and (orientation : portrait) {
+		.gfrContent {
+			padding-top: 0.75em;
+		}
+
+		.gfrPressList li {
+			padding-top: 0.65em;
+		}
+	}
+
+/*small ff*/
+@media only screen
+	and (max-width: 480px) {
+		.wrapper {
+			flex-flow: column-reverse;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.contentWrapper, .textWrapper {
+			padding: 0;
+		}
+
+		.bunny {
+			flex: 0 0 45%;
+			align-self: flex-end;
+		}
+	}

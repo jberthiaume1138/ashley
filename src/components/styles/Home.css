@@ -9,6 +9,8 @@
 }
 
 .imageWrapper {
+	/*width: auto;
+	height: 100%;*/
 }
 
 .imageWrapper img {
@@ -27,9 +29,9 @@
 		}
 }
 
-@media only screen and (max-height: 768px) {
+@media only screen and (max-height: 800px) {
 	.imageWrapper img {
-		max-height: 500px;
+		height: 450px;
 	}
 }
 /*ipad*/
